@@ -10,8 +10,7 @@
     "description": "Generate product labels with receipt details.",
     "depends": ["stock", "product"],
     "data": [
-        "report/custom_product_label_template.xml",
-        "report/custom_product_label_report.xml",
+        "report/report_productlabel.xml",
     ],
     "installable": True,
     "application": False,
