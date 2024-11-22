@@ -1,0 +1,24 @@
+<odoo>
+    <template id="product_report_simple_label_dymo_inherit" inherit_id="product.report_simple_label_dymo">
+        <xpath expr="//div[hasclass('o_label_full')]" position="attributes">
+            <attribute name="class" add="text-center" separator=" "/>
+        </xpath>
+
+
+        <xpath expr="//strong[@t-field='product.lst_price']" position="attributes">
+            <attribute name="style">display: none !important;</attribute>
+        </xpath>
+
+        <xpath expr="//strong[@t-field='product.list_price']" position="attributes">
+            <attribute name="style">display: none !important;</attribute>
+        </xpath>
+
+        <xpath expr="//span[@t-field='product.display_name']/parent::div" position="after">
+            <div t-if="receipt_name and receipt_date" style="font-size: 6pt !important;">
+                <span t-out="receipt_name"/>
+                <br/>
+                <span t-out="receipt_date"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
