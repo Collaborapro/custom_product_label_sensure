@@ -4,7 +4,7 @@
             <attribute name="class" add="text-center" separator=" "/>
         </xpath>
 
-        <xpath expr="//div[hasclass('o_label_left_column')]" position="attributes">
+        <xpath expr="//small[@t-field='product.default_code']" position="attributes">
             <attribute name="style">display: none !important;</attribute>
         </xpath>
 
