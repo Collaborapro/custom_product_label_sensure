@@ -17,7 +17,7 @@
         </xpath>
 
         <xpath expr="//span[@t-field='product.display_name']/parent::div" position="after">
-            <div t-if="receipt_name and receipt_date" style="font-size: 8pt !important;">
+            <div t-if="receipt_name and receipt_date" style="font-size: 9pt !important;">
                 <span t-out="receipt_name" style="margin-right: 4px;"/> <span t-out="receipt_date"/>
             </div>
         </xpath>
