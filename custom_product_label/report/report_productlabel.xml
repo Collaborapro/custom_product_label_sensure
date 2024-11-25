@@ -4,7 +4,7 @@
             <attribute name="class" add="text-center" separator=" "/>
         </xpath>
         
-        <xpath expr="//span[@t-field='product.display_name]" position="attributes">
+        <xpath expr="//span[@t-field='product.display_name']" position="attributes">
             <attribute name="style">display: none !important;</attribute>
         </xpath>
 
