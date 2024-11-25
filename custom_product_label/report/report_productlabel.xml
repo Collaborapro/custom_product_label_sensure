@@ -4,7 +4,7 @@
             <attribute name="class" add="text-center" separator=" "/>
         </xpath>
         
-        <xpath expr="//div[hasclass('o_label_name')]/span[@t-out='barcode']" position="attributes">
+        <xpath expr="//div[hasclass('o_label_name')][1]" position="attributes">
             <attribute name="style">display: none !important;</attribute>
         </xpath>
 
