@@ -22,8 +22,12 @@
             </div>
         </xpath>
 
+        <xpath expr="//div[hasclass('o_label_left_column')]" position="attributes">
+            <attribute name="style">padding: 0px !important;</attribute>
+        </xpath>
+
         <xpath expr="//div[hasclass('o_label_left_column')]/small" position="attributes">
-            <attribute name="style">font-size: 19px !important; padding: 0px !important;</attribute>
+            <attribute name="style">font-size: 19px !important</attribute>
         </xpath>
     </template>
 </odoo>
