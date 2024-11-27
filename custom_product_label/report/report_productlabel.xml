@@ -9,7 +9,7 @@
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_left_column')]/small" position="attributes">
-            <attribute name="style">font-size: 16pt !important;</attribute>
+            <attribute name="style">font-size: 15pt !important;</attribute>
         </xpath>
         <xpath expr="//strong[@t-field='product.lst_price']" position="attributes">
             <attribute name="style">display: none !important;</attribute>
