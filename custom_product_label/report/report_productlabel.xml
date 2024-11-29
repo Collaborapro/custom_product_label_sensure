@@ -25,17 +25,17 @@
         </xpath>
 
         <xpath expr="//span[@t-field='product.display_name']/parent::div" position="after">
-            <div t-if="receipt_name and receipt_date" style="font-size: 8px !important; padding: 0px !important;">
+            <div t-if="receipt_name and receipt_date" style="font-size: 8px !important; padding: 0px !important; margin-top: -1px;">
                 <span t-out="receipt_name" style="margin-right: 4px;"/> <span t-out="receipt_date"/>
             </div>
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_left_column')]" position="attributes">
-            <attribute name="style">padding: 0px !important; width: 100% !important;</attribute>
+            <attribute name="style">padding: 0px !important; width: 100% !important; margin-top: -2px</attribute>
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_left_column')]/small" position="attributes">
-            <attribute name="style">font-size: 20px !important; display: inline-block !important;</attribute>
+            <attribute name="style">font-size: 20px !important; display: inline-block !important; margin-top: -2px</attribute>
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_extra_data')]" position="attributes">
