@@ -4,11 +4,11 @@
             <attribute name="class" add="text-center" separator=" "/>
         </xpath>
         
-        <xpath expr="//div[hasclass('o_label_name')][1]" position="attributes">
+        <xpath expr="//div[@class='o_label_name'][1]" position="attributes">
             <attribute name="style">height: auto !important; padding-bottom: 0px !important; background: transparent !important;</attribute>
         </xpath>
 
-        <xpath expr="//div[hasclass('o_label_name')][2]" position="attributes">
+        <xpath expr="//div[@class='o_label_name'][2]" position="attributes">
             <attribute name="style">height: auto !important;</attribute>
         </xpath>
 
