@@ -10,7 +10,7 @@
 
         <xpath expr="//span[@t-out='barcode']/parent::div" position="after">
             <div class="text-start o_label_small_barcode">
-                <t t-if="product_template.barcode">
+                <t t-if="product_product.barcode">
                     <div class="o_label_name" style="height:1.7em;background-color: transparent;">
                         <div t-out="product_product.barcode" style="padding:0"
                              t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': 'width:33mm;height:14mm'}"/>
