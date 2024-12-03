@@ -9,7 +9,7 @@
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_left_column')]" position="attributes">
-            <attribute name="style">padding: 0px !important; width: 100% !important;</attribute>
+            <attribute name="style">display: none !important;</attribute>
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
