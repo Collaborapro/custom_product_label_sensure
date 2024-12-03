@@ -18,7 +18,7 @@
                     <div t-out="product.product_tmpl_id.barcode" style="padding:0" t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
                 </t>
             </div>
-            <div class="text-center">
+            <div class="text-center" style="padding: 0px 4px;">
                 <span class="text-nowrap" t-field="product.default_code" style="font-size: 20px !important; display: inline-block !important;"/>
             </div>
         </xpath>
