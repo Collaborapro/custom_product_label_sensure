@@ -28,7 +28,7 @@
         </xpath>
 
         <xpath expr="//span[@t-if='product.is_product_variant']" position="attributes">
-            <attribute name="style">display: inline-block !important; height: 100% !important; line-height: 1.0 !important;</attribute>
+            <attribute name="style">display: inline-block !important; height: 100% !important; line-height: 1.0 !important; font-size: 75% !important;</attribute>
         </xpath>
 
         <xpath expr="//strong[@t-field='product.lst_price']" position="attributes">
