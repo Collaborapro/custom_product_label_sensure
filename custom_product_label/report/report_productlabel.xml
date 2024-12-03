@@ -10,8 +10,8 @@
 
         <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
             <div class="text-start">
-                <t t-if="product_product.barcode">
-                    <span t-out="product_product.barcode"/>
+                <t t-if="o.barcode">
+                    <span t-out="o.barcode"/>
                 </t>
             </div>
         </xpath>
