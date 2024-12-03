@@ -8,6 +8,14 @@
             <attribute name="style">height: auto !important; padding-bottom: 0px !important; background: transparent !important;</attribute>
         </xpath>
 
+        <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
+            <div class="text-start">
+                <t t-if="product.product_tmpl_id.barcode">
+                    <span t-out="product.product_tmpl_id.barcode"/>
+                </t>
+            </div>
+        </xpath>
+
         <xpath expr="//span[@t-if='product.is_product_variant']/parent::div" position="attributes">
             <attribute name="style">height: auto !important; padding: 0px !important; background: transparent !important</attribute>
         </xpath>
