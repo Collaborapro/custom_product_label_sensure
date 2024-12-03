@@ -9,7 +9,7 @@
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
-            <div class="text-start">
+            <div class="text-start" style="padding: 0px 4px !important;">
                 <t t-if="product.product_tmpl_id.barcode">
                     <div t-out="product.product_tmpl_id.barcode" style="padding:0" t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
                 </t>
