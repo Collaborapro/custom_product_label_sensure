@@ -1,7 +1,7 @@
 <odoo>
     <template id="product_report_simple_label_dymo_inherit" inherit_id="product.report_simple_label_dymo">
         <xpath expr="//div[hasclass('o_label_dymo')]" position="attributes">
-            <attribute name="style">padding: 1.5mm</attribute>
+            <attribute name="t-att-style" >'padding: 1.5mm'</attribute>
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_full')]" position="attributes">
@@ -62,6 +62,10 @@
 
         <xpath expr="//div[hasclass('o_label_extra_data')]" position="attributes">
             <attribute name="style">display: none !important;</attribute>
+        </xpath>
+
+        <xpath expr="//t[@t-set='padding_page']" position="attributes">
+            <attribute name="t-value">'padding: 1.5mm'</attribute>
         </xpath>
     </template>
 </odoo>
