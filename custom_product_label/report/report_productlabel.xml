@@ -43,6 +43,17 @@
             <div t-if="receipt_name and receipt_date" style="font-size: 8px !important; padding: 0px !important;">
                 <span t-out="receipt_name" style="margin-right: 4px;"/> <span t-out="receipt_date"/>
             </div>
+            <div class="text-start o_label_small_barcode">
+                <t t-if="barcode">
+                    <!-- `quiet=0` to remove the left and right margins on the barcode -->
+                    <div t-out="barcode" style="padding:0"
+                         t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
+                    <div class="o_label_name"
+                         style="height:1.7em;background-color: transparent; height: auto !important; padding: 0px !important; background: transparent !important">
+                        <span t-out="barcode"/>
+                    </div>
+                </t>
+            </div>
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_extra_data')]" position="attributes">
