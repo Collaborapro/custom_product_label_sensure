@@ -13,7 +13,7 @@
                 <t t-if="product_product.barcode">
                     <div class="o_label_name" style="height:1.7em;background-color: transparent;">
                         <div t-out="product_product.barcode" style="padding:0"
-                             t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': 'width:33mm;height:14mm'}"/>
+                             t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
                         <span t-out="product_product.barcode"/>
                     </div>
                 </t>
