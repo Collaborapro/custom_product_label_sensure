@@ -24,7 +24,7 @@
         </xpath>
 
         <xpath expr="//span[@t-if='product.is_product_variant']/parent::div" position="attributes">
-            <attribute name="style">height: auto !important; padding: 0px !important; background: transparent !important</attribute>
+            <attribute name="style">height: auto !important; padding: 0px !important; background: transparent !important; margin-top: -6px !important;</attribute>
         </xpath>
 
         <xpath expr="//span[@t-if='product.is_product_variant']" position="attributes">
