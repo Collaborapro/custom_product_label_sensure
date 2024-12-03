@@ -8,7 +8,7 @@
             <attribute name="style">height: auto !important; padding-bottom: 0px !important; background: transparent !important;</attribute>
         </xpath>
 
-        <xpath expr="//span[@t-out='barcode']/parent::div" position="after">
+        <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
             <div class="text-start o_label_small_barcode">
                 <t t-if="product_product.barcode">
                     <div class="o_label_name" style="height:1.7em;background-color: transparent;">
