@@ -23,7 +23,7 @@
                 </t>
             </div>
             <div class="text-center" style="padding: 0px 4px; margin-top: -3px !important;">
-                <span class="text-nowrap" t-field="product.default_code" style="font-size: 20px !important; display: inline-block !important;"/>
+                <span class="text-nowrap" t-field="product.default_code" style="font-size: 20px !important; display: inline-block !important; margin-top: -2px !important;"/>
             </div>
         </xpath>
 
