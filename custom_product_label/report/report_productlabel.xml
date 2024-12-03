@@ -13,7 +13,7 @@
         </xpath>
 
         <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
-            <div class="text-start" style="padding: 0px 4px !important;">
+            <div class="text-center" style="padding: 0px 4px !important;">
                 <t t-if="product.product_tmpl_id.barcode">
                     <div t-out="product.product_tmpl_id.barcode" style="padding:0" t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
                 </t>
@@ -43,7 +43,7 @@
             <div t-if="receipt_name and receipt_date" style="font-size: 8px !important; padding: 0px !important; margin-top: -4px !important;">
                 <span t-out="receipt_name" style="margin-right: 4px;"/> <span t-out="receipt_date"/>
             </div>
-            <div class="text-start o_label_small_barcode">
+            <div class="text-center o_label_small_barcode">
                 <t t-if="barcode">
                     <!-- `quiet=0` to remove the left and right margins on the barcode -->
                     <div t-out="barcode" style="padding:0"
@@ -59,16 +59,5 @@
         <xpath expr="//div[hasclass('o_label_extra_data')]" position="attributes">
             <attribute name="style">display: none !important;</attribute>
         </xpath>
-
-        <div class="text-start o_label_small_barcode" >
-            <t t-if="barcode">
-                <!-- `quiet=0` to remove the left and right margins on the barcode -->
-                <div t-out="barcode" style="padding:0; text-align: center !important;"
-                     t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
-                <div class="o_label_name" style="height:1.7em;background-color: transparent; height: auto !important; padding: 0px !important; background: transparent !important">
-                    <span t-out="barcode"/>
-                </div>
-            </t>
-        </div>
     </template>
 </odoo>
