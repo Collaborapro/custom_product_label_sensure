@@ -63,9 +63,5 @@
         <xpath expr="//div[hasclass('o_label_extra_data')]" position="attributes">
             <attribute name="style">display: none !important;</attribute>
         </xpath>
-
-        <xpath expr="//t[@t-set='padding_page']" position="attributes">
-            <attribute name="t-value">'padding: 1.5mm'</attribute>
-        </xpath>
     </template>
 </odoo>
