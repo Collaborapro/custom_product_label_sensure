@@ -18,21 +18,37 @@
 
         <xpath expr="//div[hasclass('o_label_small_barcode')]" position="after">
             <div class="text-center" style="padding: 0px 4px !important;">
-                <t t-if="product.product_tmpl_id.barcode">
-                    <div t-out="product.product_tmpl_id.barcode" style="padding:0" t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
+                <t t-set="product_template_barcode"
+                   t-value="product.is_product_variant and product.product_tmpl_id.barcode or product.barcode"/>
+
+                <t t-if="product_template_barcode">
+                    <div t-out="product_template_barcode" style="padding:0"
+                         t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': barcode_size}"/>
                 </t>
             </div>
+            
             <div class="text-center" style="padding: 0px 4px; margin-top: -3px !important;">
-                <span class="text-nowrap" t-field="product.default_code" style="font-size: 20px !important; display: inline-block !important; margin-top: -1px !important;"/>
+                <span class="text-nowrap" t-field="product.default_code"
+                      style="font-size: 20px !important; display: inline-block !important; margin-top: -1px !important;"/>
             </div>
         </xpath>
 
         <xpath expr="//span[@t-if='product.is_product_variant']/parent::div" position="attributes">
-            <attribute name="style">height: auto !important; padding: 0px !important; background: transparent !important; margin-top: -6px !important;</attribute>
+            <attribute name="style">
+                height: auto !important;
+                padding: 0px !important;
+                background: transparent !important;
+                margin-top: -6px !important;
+            </attribute>
         </xpath>
 
         <xpath expr="//span[@t-if='product.is_product_variant']" position="attributes">
-            <attribute name="style">display: inline-block !important; height: 100% !important; line-height: 1.0 !important; font-size: 75% !important;</attribute>
+            <attribute name="style">
+                display: inline-block !important;
+                height: 100% !important;
+                line-height: 1.0 !important;
+                font-size: 75% !important;
+            </attribute>
         </xpath>
 
         <xpath expr="//strong[@t-field='product.lst_price']" position="attributes">
@@ -44,9 +60,11 @@
         </xpath>
 
         <xpath expr="//span[@t-field='product.display_name']/parent::div" position="after">
-            <div t-if="receipt_name and receipt_date" style="font-size: 8px !important; padding: 0px !important; margin-top: -4px !important;">
+            <div t-if="receipt_name and receipt_date"
+                 style="font-size: 8px !important; padding: 0px !important; margin-top: -4px !important;">
                 <span t-out="receipt_name" style="margin-right: 4px;"/> <span t-out="receipt_date"/>
             </div>
+
             <div class="text-center o_label_small_barcode">
                 <t t-if="barcode">
                     <!-- `quiet=0` to remove the left and right margins on the barcode -->
