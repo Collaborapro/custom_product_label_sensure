@@ -10,7 +10,7 @@ class AbstractStockLabel(models.Model):
         product_ids = self.filtered("product_id").mapped("product_id")
         move_line_ids = self.env["stock.move.line"].browse()
 
-        if self.name == "stock.move.line":
+        if self._name == "stock.move.line":
             move_line_ids |= self
 
         return {
@@ -32,7 +32,7 @@ class AbstractStockLabel(models.Model):
         if self._name in ("stock.quant", "stock.move.line"):
             lot_ids |= self.filtered("lot_id").mapped("lot_id")
         
-        elif self.name == "stock.lot":
+        elif self._name == "stock.lot":
             lot_ids |= self
         
         if self.user_has_groups("stock.group_production_lot") and lot_ids:
