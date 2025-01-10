@@ -8,7 +8,7 @@
     "website": "https://www.necte.it",
     "summary": "Custom labels for products in receipts",
     "description": "Generate product labels with receipt details.",
-    "depends": ["stock", "product"],
+    "depends": ["stock", "product", "stock_inventory"],
     "data": [
         "views/stock_lot_views.xml",
         "views/stock_move_line_views.xml",
