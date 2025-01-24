@@ -12,4 +12,18 @@
             </xpath>
         </field>
     </record>
+
+    <record id="stock_view_move_line_tree_inherit" model="ir.ui.view">
+        <field name="name">stock.view.move.line.tree.inherit</field>
+        <field name="model">stock.move.line</field>
+        <field name="inherit_id" ref="stock.view_move_line_tree"/>
+
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field" position="before">
+                <header>
+                    <button name="action_print_labels" type="object" class="btn-primary" string="Stampa Etichette"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
 </odoo>

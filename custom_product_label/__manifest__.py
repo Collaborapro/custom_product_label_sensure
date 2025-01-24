@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Custom Product Labels for Receipts",
-    "version": "1.0",
+    "version": "1.0.1",
     "category": "Warehouse",
      "author": "Necte Eloisa Montevecchi",
     "version": "16.0.0.4",
